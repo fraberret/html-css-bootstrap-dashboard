@@ -54,6 +54,11 @@
     background-color: var(--dash-dark);
 }
 
+.bg_dark_trasparent{
+    background-color: rgba(0, 0, 0, 0.266)
+    
+}
+
 .container_big{
     height: 100vh;
 }
@@ -124,6 +129,11 @@ aside{
     .desktop_logo{
         display: block;
     }
+
+    .plus{
+        display: none;
+    }
+
 }
 
 .main_contents{
