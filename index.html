@@ -13,12 +13,34 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="debug">
+<body class="">
 
     <!-- site header -->
-    <header class="site_header bg_light d-flex align-items-center">
-        <nav class="bg_lighter">
+    <header class="site_header bg_light d-flex align-items-center ">
+        <nav class="bg_lighter d-flex justify-content-between align-items-center px-2">
 
+            <!-- logo -->
+            <div class="logo">
+                <img src="./assets/img/logo.svg" alt="">
+            </div>
+
+            <!-- searchbar -->
+            <form class="form-inline d-flex align-items-center bg_light w-75 rounded h-100">
+                <span class="px-2"><i class="fa fa-search" aria-hidden="true"></i></span>
+                <input class="form-control mr-sm-2 border-0 bg_light" type="search"
+                    placeholder="Prova a cercare: Lezioni di Laravel" aria-label="Search">
+
+
+            </form>
+
+            <!-- icons -->
+            <div class="icon d-flex ">
+
+                <a href="#" class="color_dark px-2 hide"><i class="fa-solid fa-list-ul"></i></a>
+                <a href="#" class="color_dark px-2 hide"><i class="fa-solid fa-circle-question"></i></a>
+                <a href="#" class="color_dark px-2 hide"><i class="fa-solid fa-ellipsis-vertical"></i></a>
+                <a href="#" class="bell px-2"><i class="fa-solid fa-bell"></i></a>
+            </div>
         </nav>
     </header>
 
@@ -45,7 +67,7 @@
                     <div class="row ">
 
                         <!-- left side -->
-                        <div class="col-12 col-md-8">
+                        <div class="col-12 col-lg-8">
 
                             <!-- prossime classi -->
                             <div class="card my-4">
@@ -64,18 +86,26 @@
                                 error eveniet labore, reprehenderit eos maxime omnis alias nulla soluta rerum nisi
                                 voluptas est. Sunt unde repellat cum.
                             </div>
-                            
+
                         </div>
 
                         <!-- right side -->
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-lg-4">
 
                             <!-- todo -->
-                            <div class="card my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consequuntur distinctio rerum deserunt iusto nulla voluptatibus deleniti, obcaecati facere assumenda? Expedita earum ipsam, tenetur nihil ut quibusdam impedit magni ea facilis nam non molestias dolorem itaque ex modi? Est atque soluta architecto quasi ut porro commodi veniam dolore facere explicabo!</div>
+                            <div class="card my-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae
+                                consequuntur distinctio rerum deserunt iusto nulla voluptatibus deleniti, obcaecati
+                                facere assumenda? Expedita earum ipsam, tenetur nihil ut quibusdam impedit magni ea
+                                facilis nam non molestias dolorem itaque ex modi? Est atque soluta architecto quasi ut
+                                porro commodi veniam dolore facere explicabo!</div>
 
                             <!-- stats -->
                             <div class="card mb-4">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam tenetur eius voluptatum impedit sapiente autem, officia nesciunt quisquam ex laboriosam, totam deserunt saepe quis eum illo, labore cupiditate dolor qui molestias. Adipisci consequuntur at voluptates, officia recusandae quo libero possimus commodi illum repellat officiis sed, neque aliquam laudantium quia fugit?
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam tenetur eius voluptatum
+                                impedit sapiente autem, officia nesciunt quisquam ex laboriosam, totam deserunt saepe
+                                quis eum illo, labore cupiditate dolor qui molestias. Adipisci consequuntur at
+                                voluptates, officia recusandae quo libero possimus commodi illum repellat officiis sed,
+                                neque aliquam laudantium quia fugit?
                             </div>
 
                         </div>
