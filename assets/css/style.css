@@ -69,6 +69,7 @@ aside{
 
 
 .site_main{
+    height: calc(100% - 100px);
     width: calc(100% - 50px);
 }
 
@@ -81,4 +82,8 @@ aside{
     .site_main{
         width: calc(100% - 200px);
     }
+}
+
+.main_contents{
+    height: calc(100% - 150px);
 }
