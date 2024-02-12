@@ -1,3 +1,17 @@
-body{
-    background-color: red;
+/* color palette */
+:root{
+   
+    /* site */
+    --dash-primary:#1b72e8;
+    --dash-dark:#051e34;
+    --dash-darker:#212529;
+    --dash-light:#f7f7f7;
+    --dash-lighter:#ffffff;
+    
+    /* tags */
+    --dash-accent:#f26551;
+    --dash-accent2:#198754;
+    --dash-accent3:#ffc107;
+    --dash-accent4:#dc3545;
+
 }
