@@ -99,6 +99,10 @@ aside{
     width: calc(100% - 70px);
 }
 
+.sidebar_buttons:hover{
+    background-color: rgba(211, 211, 211, 0.505)
+}
+
 @media screen and (min-width:992px){
 
     aside{
@@ -110,7 +114,7 @@ aside{
     }
 
     .hide{
-        display: block;
+        display: inline-block;
     }
 
     .mobile_logo{
