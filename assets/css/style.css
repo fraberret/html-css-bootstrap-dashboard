@@ -68,7 +68,7 @@ aside{
 }
 
 
-.main{
+.site_main{
     width: calc(100% - 50px);
 }
 
@@ -78,7 +78,7 @@ aside{
         width: 200px;
     }
     
-    .main{
+    .site_main{
         width: calc(100% - 200px);
     }
 }
