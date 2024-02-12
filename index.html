@@ -91,10 +91,10 @@
         <main class="site_main">
 
             <!-- main header -->
-            <header class="main_header d-flex justify-content-between bg_primary text-white py-3 px-2">
-                
+            <header class="main_header d-flex flex-column flex-sm-row justify-content-between bg_primary text-white py-3 ps-2 pe-5">
+
                 <!-- left side -->
-                <div class="left d-flex  flex-column">
+                <div class="left d-flex  flex-column p-3 order-3 order-sm-1">
                     <div class="d-flex align-items-center">
                         <h2 class="pe-2">Boolean</h2>
                         <p class="badge rounded-pill bg_dark_trasparent m-0">Piano Blaze</p>
@@ -106,6 +106,30 @@
                         <span class="badge rounded-pill bg_dark_trasparent hide">Boolean web app</span>
                         <span class="badge rounded-pill bg_dark_trasparent hide">Boolean blog app</span>
                         <span class="badge rounded-pill bg_dark_trasparent plus">+</span>
+                    </div>
+                </div>
+
+                <div class="center order-2 p-3">
+                    <p>Studenti online negli ultimi 30 minuti</p>
+                    <h2>125</h2>
+                </div>
+
+                <div class="right d-flex align-items-center order-1 order-sm-3 px-3">
+                    <p class="m-0">Nuovo Studente</p>
+                    <div class="p-3">
+                    <button class="btn border text-white" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">+</button></div>
+
+                    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1"
+                        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Backdrop with scrolling</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <p>Try scrolling the rest of the page to see this option in action.</p>
+                        </div>
                     </div>
                 </div>
             </header>
