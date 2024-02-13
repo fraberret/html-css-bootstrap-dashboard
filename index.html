@@ -45,14 +45,14 @@
                 <a href="#" class="color_dark px-2 hide"><i class="fa-solid fa-ellipsis-vertical"></i></a>
                 <div class="dropdown">
                     <button class="btn bell" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      <i class="fa fa-bell" aria-hidden="true"></i>
+                        <i class="fa fa-bell" aria-hidden="true"></i>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><button class="dropdown-item" type="button">Profilo</button></li>
-                      <li><button class="dropdown-item" type="button">Fatturazione </button></li>
-                      <li><button class="dropdown-item" type="button">Logout</button></li>
+                        <li><button class="dropdown-item" type="button">Profilo</button></li>
+                        <li><button class="dropdown-item" type="button">Fatturazione </button></li>
+                        <li><button class="dropdown-item" type="button">Logout</button></li>
                     </ul>
-                  </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -100,7 +100,8 @@
         <main class="site_main">
 
             <!-- main header -->
-            <header class="main_header d-flex flex-column flex-sm-row justify-content-between bg_primary text-white py-3 ps-2 pe-5">
+            <header
+                class="main_header d-flex flex-column flex-sm-row justify-content-between bg_primary text-white py-3 ps-2 pe-5">
 
                 <!-- left side -->
                 <div class="left d-flex  flex-column p-3 order-3 order-sm-1">
@@ -118,20 +119,22 @@
                     </div>
                 </div>
 
-                <!-- center section -->
+                <!-- center -->
                 <div class="center order-2 p-3">
                     <p>Studenti online negli ultimi 30 minuti</p>
                     <h2>125</h2>
                 </div>
 
-                <!-- right section -->
+                <!-- right side -->
                 <div class="right d-flex align-items-center order-1 order-sm-3 px-3">
                     <p class="m-0">Nuovo Studente</p>
-                    
+
                     <!-- offcanvas -->
                     <div class=" p-3">
-                    <button class="btn border text-white" type="button" data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">+</button></div>
+                        <button class="btn border text-white" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasWithBothOptions"
+                            aria-controls="offcanvasWithBothOptions">+</button>
+                    </div>
 
                     <div class="offcanvas offcanvas_container offcanvas-end" data-bs-scroll="true" tabindex="-1"
                         id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
@@ -141,25 +144,87 @@
                                 aria-label="Close"></button>
                         </div>
                         <div class="offcanvas-body ">
-                            <div class="row g-2">
-                                <div class="col-md">
-                                  <div class="form-floating">
-                                    <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="mdo@example.com">
-                                    <label for="floatingInputGrid">Email address</label>
-                                  </div>
-                                </div>
-                                <div class="col-md">
-                                  <div class="form-floating">
-                                    <select class="form-select" id="floatingSelectGrid">
-                                      <option selected>Open this select menu</option>
-                                      <option value="1">One</option>
-                                      <option value="2">Two</option>
-                                      <option value="3">Three</option>
-                                    </select>
-                                    <label for="floatingSelectGrid">Works with selects</label>
-                                  </div>
-                                </div>
-                              </div>
+
+                            <!-- form -->
+                            <div class="container">
+                                <form class="row g-3">
+                                    
+                                    <!-- name -->
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Nome</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    
+                                    <!-- surname -->
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Cognome</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    
+                                    <!-- email -->
+                                    <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <div class="input-group">
+                                            <div class="input-group-text">@</div>
+                                            <input type="text" class="form-control" id="inlineFormInputGroupUsername"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- password -->
+                                    <div class="col-md-6">
+                                        <label for="inputPassword4" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    
+                                    <!-- address -->
+                                    <div class="col-12">
+                                        <label for="inputAddress" class="form-label">Indirizzo</label>
+                                        <input type="text" class="form-control" id="inputAddress">
+                                    </div>
+
+                                    <!-- city -->
+                                    <div class="col-md-6">
+                                        <label for="inputCity" class="form-label">Città</label>
+                                        <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    
+                                    <!-- state -->
+                                    <div class="col-md-4">
+                                        <label for="inputState" class="form-label">Stato</label>
+                                        <select id="inputState" class="form-select">
+                                            <option selected>Choose...</option>
+                                            <option>...</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <!-- zip -->
+                                    <div class="col-md-2">
+                                        <label for="inputZip" class="form-label">Cap</label>
+                                        <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    
+                                    <!-- checkbox -->
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">
+                                                Seleziona per proseguire
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- buttons -->
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="submit" class="btn btn-warning ">Svuota</button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
