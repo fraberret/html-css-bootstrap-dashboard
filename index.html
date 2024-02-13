@@ -38,12 +38,21 @@
             </form>
 
             <!-- icons -->
-            <div class="icon d-flex ">
+            <div class="icon d-flex align-items-center">
 
                 <a href="#" class="color_dark px-2 hide"><i class="fa-solid fa-list-ul"></i></a>
                 <a href="#" class="color_dark px-2 hide"><i class="fa-solid fa-circle-question"></i></a>
                 <a href="#" class="color_dark px-2 hide"><i class="fa-solid fa-ellipsis-vertical"></i></a>
-                <a href="#" class="bell px-2"><i class="fa-solid fa-bell"></i></a>
+                <div class="dropdown">
+                    <button class="btn bell" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fa fa-bell" aria-hidden="true"></i>
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Profilo</button></li>
+                      <li><button class="dropdown-item" type="button">Fatturazione </button></li>
+                      <li><button class="dropdown-item" type="button">Logout</button></li>
+                    </ul>
+                  </div>
             </div>
         </nav>
     </header>
@@ -109,11 +118,13 @@
                     </div>
                 </div>
 
+                <!-- center section -->
                 <div class="center order-2 p-3">
                     <p>Studenti online negli ultimi 30 minuti</p>
                     <h2>125</h2>
                 </div>
 
+                <!-- right section -->
                 <div class="right d-flex align-items-center order-1 order-sm-3 px-3">
                     <p class="m-0">Nuovo Studente</p>
                     <div class="p-3">
