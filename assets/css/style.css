@@ -79,6 +79,9 @@ nav{
 body{
     overflow: hidden;
 }
+.main_contents{
+    height: calc(100% - 150px);
+}
 
 aside{
     width: 70px;
@@ -107,7 +110,9 @@ aside{
 .sidebar_buttons:hover{
     background-color: rgba(211, 211, 211, 0.505)
 }
-
+.offcanvas_container{
+    width: 100vw !important; 
+}
 @media screen and (min-width:992px){
 
     aside{
@@ -134,8 +139,9 @@ aside{
         display: none;
     }
 
+    .offcanvas_container{
+        width: 50vw !important ; 
+    }
 }
 
-.main_contents{
-    height: calc(100% - 150px);
-}
+
