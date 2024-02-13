@@ -107,7 +107,7 @@ aside{
 }
 
 .site_main{
-    height: calc(100% - 100px);
+    height: calc(100% - 80px);
     width: calc(100% - 70px);
 }
 
