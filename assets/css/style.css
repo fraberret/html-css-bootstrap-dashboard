@@ -76,7 +76,7 @@ nav{
     height: 60%;
 }
 
-.main_header{
+.wrapper{
     height: 300px;
 }
 
@@ -155,7 +155,7 @@ aside{
 
 
 @media screen and (min-width:768px){
-    .main_header{
+    .wrapper{
         height: 150px;
 }
 .main_contents{
