@@ -100,7 +100,8 @@
         <main class="site_main overflow-auto">
 
             <!-- main wrapper -->
-            <div class="wrapper  d-flex flex-column flex-md-row align-items-md-center justify-content-between bg_primary text-white  pe-5 ">
+            <div
+                class="wrapper  d-flex flex-column flex-md-row align-items-md-center justify-content-between bg_primary text-white  pe-5 ">
 
                 <!-- left side -->
                 <div class="left d-flex  flex-column p-3 order-3 order-md-1">
@@ -147,19 +148,19 @@
                             <!-- form -->
                             <div class="container">
                                 <form class="row g-3">
-                                    
+
                                     <!-- name -->
                                     <div class="col-md-6">
                                         <label for="inputPassword4" class="form-label">Nome</label>
                                         <input type="password" class="form-control" id="">
                                     </div>
-                                    
+
                                     <!-- surname -->
                                     <div class="col-md-6">
                                         <label for="inputPassword4" class="form-label">Cognome</label>
                                         <input type="password" class="form-control" id="">
                                     </div>
-                                    
+
                                     <!-- email -->
                                     <div class="col-md-6">
                                         <label for="inputEmail4" class="form-label">Email</label>
@@ -169,13 +170,13 @@
                                                 placeholder="">
                                         </div>
                                     </div>
-                                    
+
                                     <!-- password -->
                                     <div class="col-md-6">
                                         <label for="inputPassword4" class="form-label">Password</label>
                                         <input type="password" class="form-control" id="inputPassword4">
                                     </div>
-                                    
+
                                     <!-- address -->
                                     <div class="col-12">
                                         <label for="inputAddress" class="form-label">Indirizzo</label>
@@ -187,7 +188,7 @@
                                         <label for="inputCity" class="form-label">Città</label>
                                         <input type="text" class="form-control" id="inputCity">
                                     </div>
-                                    
+
                                     <!-- state -->
                                     <div class="col-md-4">
                                         <label for="inputState" class="form-label">Stato</label>
@@ -196,7 +197,7 @@
                                             <option>...</option>
                                         </select>
                                     </div>
-                                    
+
                                     <!-- zip -->
                                     <div class="col-md-2">
                                         <label for="inputZip" class="form-label">Cap</label>
@@ -206,7 +207,7 @@
                                         <label for="formFile" class="form-label">Foto</label>
                                         <input class="form-control" type="file" id="formFile">
                                     </div>
-                                    
+
                                     <!-- checkbox -->
                                     <div class="col-12">
                                         <div class="form-check">
@@ -239,41 +240,142 @@
                         <div class="col-12 col-lg-8">
 
                             <!-- prossime classi -->
-                            <div class="card my-4" >
+                            <div class="card my-4">
                                 <div class="card-header">
-                                  <h3>Prossime classi</h3>
+                                    <h3>Prossime classi</h3>
                                 </div>
+
                                 <table class="table">
                                     <thead>
-                                      <tr>
-                                        <th class="w-" scope="col">Nome</th>
-                                        <th scope="col">Data inizio</th>
-                                        <th scope="col">ROI</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
-                                      </tr>
+                                        
+                                        
+                                        <tr>
+                                            <th class="w-50" scope="col">Nome</th>
+                                            <th scope="col" class="text-center table_hide">Data inizio</th>
+                                            <th scope="col" class="text-center table_hide">ROI</th>
+                                            <th scope="col" class="text-center">Stato</th>
+                                            <th scope="col" class="text-center ">Azioni</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>15 Feb 2021</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
+                                        
+                                        <!-- class 75 -->
+                                        <tr>
+                                            <td scope="row" class="df"> <img src="./assets/img/class-avatar.jpg" alt=""
+                                                    width="25"> Classe 75</td>
+                                            <td class="text-center table_hide">15 Feb 2021</td>
+                                            <td class="text-center table_hide">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><button class="btn border"><i class="fa fa-pencil"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn border"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- class 76 -->
+                                        <tr>
+                                            <td scope="row" class="df"> <img src="./assets/img/class-avatar.jpg" alt=""
+                                                    width="25"> Classe 76</td>
+                                            <td class="text-center table_hide">16 Feb 2021</td>
+                                            <td class="text-center table_hide">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><button class="btn border"><i class="fa fa-pencil"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn border"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- class 77 -->
+                                        <tr>
+                                            <td scope="row" class="df"> <img src="./assets/img/class-avatar.jpg" alt=""
+                                                    width="25"> Classe 77</td>
+                                            <td class="text-center table_hide">17 Feb 2021</td>
+                                            <td class="text-center table_hide">20%</td>
+                                            <td class="text-center"><span class="badge bg_accent3">Process</span></td>
+                                            <td class="text-center"><button class="btn border"><i class="fa fa-pencil"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn  border"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- class 78 -->
+                                        <tr>
+                                            <td scope="row" class="df"> <img src="./assets/img/class-avatar.jpg" alt=""
+                                                    width="25"> Classe 78</td>
+                                            <td class="text-center table_hide">18 Feb 2021</td>
+                                            <td class="text-center table_hide">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><button class="btn border"><i class="fa fa-pencil"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn  border"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- class 79 -->
+                                        <tr>
+                                            <td scope="row" class="df"> <img src="./assets/img/class-avatar.jpg" alt=""
+                                                    width="25"> Classe 79</td>
+                                            <td class="text-center table_hide">19 Feb 2021</td>
+                                            <td class="text-center table_hide">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
+                                            <td class="text-center"><button class="btn border"><i class="fa fa-pencil"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn  border"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- class 80 -->
+                                        <tr>
+                                            <td scope="row" class="df"> <img src="./assets/img/class-avatar.jpg" alt=""
+                                                    width="25"> Classe 80</td>
+                                            <td class="text-center table_hide">20 Feb 2021</td>
+                                            <td class="text-center table_hide">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><button class="btn border"><i class="fa fa-pencil"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn  border"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- class 81 -->
+                                        <tr>
+                                            <td scope="row" class="df"> <img src="./assets/img/class-avatar.jpg" alt=""
+                                                    width="25"> Classe 81</td>
+                                            <td class="text-center table_hide">21 Feb 2021</td>
+                                            <td class="text-center table_hide">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-danger">Failed</span></td>
+                                            <td class="text-center"><button class="btn border"><i class="fa fa-pencil"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn  border"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        <!-- class 82 -->
+                                        <tr>
+                                            <td scope="row" class="df"> <img src="./assets/img/class-avatar.jpg" alt=""
+                                                    width="25"> Classe 82</td>
+                                            <td class="text-center table_hide">22 Feb 2021</td>
+                                            <td class="text-center table_hide">20%</td>
+                                            <td class="text-center"><span class="badge text-bg-success">Done</span></td>
+                                            <td class="text-center"><button class="btn border"><i class="fa fa-pencil"
+                                                        aria-hidden="true"></i></button>
+                                                <button class="btn  border"><i class="fa fa-trash"
+                                                        aria-hidden="true"></i></button>
+                                            </td>
+                                        </tr>
+
+                                        
+
                                     </tbody>
-                                  </table>
-                              </div>
+                                </table>
+                            </div>
 
                             <!-- faq -->
                             <div class="card">
